@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Earth Deserves Better</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link to External CSS File -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- ==============================
+         HEADER SECTION
+    =============================== -->
+    <header>
+        <h1>🌍 Earth Deserves Better</h1>
+        <p>Using Technology to Make Recycling Easier, Smarter & More Rewarding</p>
+    </header>
+
+    <!-- ==============================
+         PROBLEM STATEMENT
+    =============================== -->
+    <section>
+        <h2>The Problem</h2>
+        <div class="card">
+            <i class="fas fa-trash"></i>
+            <p>
+                Every year, millions of tons of waste are produced.
+                Many people don’t know how to properly separate waste.
+                Recycling systems are confusing and not rewarding.
+                This leads to pollution and environmental damage.
+            </p>
+        </div>
+    </section>
+
+    <!-- ==============================
+         SOLUTIONS SECTION
+    =============================== -->
+    <section>
+        <h2>Smart Solutions with Technology</h2>
+
+        <div class="card-container">
+
+            <!-- Smart Waste Segregation -->
+            <div class="card">
+                <i class="fas fa-recycle"></i>
+                <h3>Smart Waste Segregation</h3>
+                <p>
+                    Smart bins use sensors and AI to detect waste type
+                    and automatically sort plastic, metal, and organic waste.
+                </p>
+                <button onclick="showMessage('segregation')">Learn More</button>
+            </div>
+
+            <!-- Gamified Recycling App -->
+            <div class="card">
+                <i class="fas fa-mobile-alt"></i>
+                <h3>Gamified Recycling App</h3>
+                <p>
+                    A mobile app rewards users with points and badges
+                    when they recycle correctly.
+                </p>
+                <button onclick="showMessage('app')">Learn More</button>
+            </div>
+
+            <!-- Carbon Footprint Tracker -->
+            <div class="card">
+                <i class="fas fa-leaf"></i>
+                <h3>Carbon Footprint Tracker</h3>
+                <p>
+                    Track daily activities and see how much carbon
+                    you save by recycling and reducing waste.
+                </p>
+                <button onclick="showMessage('carbon')">Learn More</button>
+            </div>
+
+        </div>
+    </section>
+    <section id="calculator">
+    <h2>Carbon Footprint Calculator</h2>
+
+    <!-- Daily Travel -->
+    <label>Daily Travel (km)</label><br>
+    <input type="number" id="distance"><br><br>
+
+    <!-- Electricity -->
+    <label>Monthly Electricity (kWh)</label><br>
+    <input type="number" id="electricity"><br><br>
+
+    <button onclick="calculateCarbon()">Calculate</button>
+
+    <p id="carbonResult"></p>
+</section>
+    <!-- ==============================
+         INTERACTIVE INFO SECTION
+    =============================== -->
+    <section>
+        <h2>Technology Impact</h2>
+        <div class="card">
+            <p id="infoText">
+                Click "Learn More" to see how each solution helps the planet 🌱
+            </p>
+        </div>
+    </section>
+
+    <!-- ==============================
+         FOOTER
+    =============================== -->
+    <footer>
+        <p>Made with 💚 for a Sustainable Future</p>
+    </footer>
+
+    <!-- Link to External JavaScript File -->
+    <script src="script.js"></script>
+
+</body>
+</html>

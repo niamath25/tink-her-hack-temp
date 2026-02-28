@@ -1,0 +1,119 @@
+/* ------------------------------
+   GLOBAL RESET
+--------------------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* ------------------------------
+   BODY STYLING
+--------------------------------*/
+body {
+    background: #f4f9f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ------------------------------
+   HEADER
+--------------------------------*/
+header {
+    background: linear-gradient(to right, #2ecc71, #27ae60);
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+header p {
+    margin-top: 10px;
+    font-size: 1.1rem;
+}
+
+/* ------------------------------
+   SECTIONS
+--------------------------------*/
+section {
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #27ae60;
+}
+
+/* ------------------------------
+   CARD DESIGN
+--------------------------------*/
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+/* Card hover animation */
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Icons */
+.card i {
+    font-size: 40px;
+    margin-bottom: 15px;
+    color: #2ecc71;
+}
+
+/* ------------------------------
+   BUTTON STYLE
+--------------------------------*/
+button {
+    background: #2ecc71;
+    border: none;
+    padding: 10px 15px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: #27ae60;
+}
+
+/* ------------------------------
+   FOOTER
+--------------------------------*/
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #27ae60;
+    color: white;
+    margin-top: 40px;
+}
+
+/* ------------------------------
+   RESPONSIVE DESIGN
+--------------------------------*/
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+}
